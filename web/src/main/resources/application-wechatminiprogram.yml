@@ -1,0 +1,4 @@
+#微信小程序
+wechat-mini-program:
+  app-id: yourAppId
+  app-secret: yourAppSecret
