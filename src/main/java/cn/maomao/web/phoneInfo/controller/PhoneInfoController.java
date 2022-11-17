@@ -22,7 +22,7 @@ public class PhoneInfoController {
     private IPhoneInfoService phoneInfoService;
 
     @PostMapping(value = "/getPhoneInfoByWeChatCode")
-    public Response loginByWeChat(
+    public Response getPhoneInfoByWeChatCode(
             @RequestParam String weChatCode){
         PhoneInfoDTO phoneInfoDTO = phoneInfoService.getPhoneInfoByWeChatCode(weChatCode);
         return new Response(phoneInfoDTO);
